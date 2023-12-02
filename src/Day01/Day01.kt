@@ -1,3 +1,10 @@
+package Day01
+
+import println
+import readInput
+
+const val DAY = "Day01"
+
 fun main() {
     fun part1(input: List<String>): Int {
         return input
@@ -15,14 +22,14 @@ fun main() {
 
     // test if implementation meets criteria from the description, like:
     println("Part One")
-    val testInput = readInput("Day01_p1_test")
+    val testInput = readInput("${DAY}/part1_test")
     check(part1(testInput) == 142)
 
-    val input = readInput("Day01")
+    val input = readInput("${DAY}/input")
     part1(input).println()
 
     println("Part Two")
-    val testInputP2 = readInput("Day01_p2_test")
+    val testInputP2 = readInput("${DAY}/part2_test")
     check(part2(testInputP2) == 281)
 
     part2(input).println()
