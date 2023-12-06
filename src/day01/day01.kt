@@ -1,11 +1,11 @@
-package Day01
+package day01
 
 import println
 import readInput
 
-const val DAY = "Day01"
-
 fun main() {
+    val DAY = "day01"
+
     fun part1(input: List<String>): Int {
         return input
             .map { it.replace("""\D""".toRegex(), "") }
